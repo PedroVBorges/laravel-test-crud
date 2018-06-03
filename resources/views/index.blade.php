@@ -48,6 +48,12 @@
                 </tr>
                 @endforeach
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="3">{{ $products->sum('total_price') }}</td>
+                </tr>
+            </tfoot>
         </table>
         <div class="row">
             <div class="col-md-2">
